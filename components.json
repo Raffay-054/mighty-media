@@ -1,0 +1,12 @@
+{
+    "components": [
+      {
+        "name": "Button",
+        "path": "./components/ui/button"
+      },
+      {
+        "name": "Input",
+        "path": "./components/ui/input"
+      }
+    ]
+  }
