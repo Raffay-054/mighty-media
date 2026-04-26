@@ -15,7 +15,8 @@ import OurWork from "./components/Our-Work";
 import MetaPixel from "./components/Meta";
 import ArtistDevelopment from "./components/ArtistDevelopment";
 import PromoForm from "./components/PromoForm";
-
+import RoyaltiesCalculator from "./components/Royalties-Calculator";
+import InvoiceForm from "./components/Invoice-Form";
 const App = () => {
   return (
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
@@ -42,7 +43,10 @@ const App = () => {
         <Route path="/about" element={<AboutUsPage/>} /> 
         <Route path="/artist-development" element={<ArtistDevelopment/>} />  
         <Route path="/our-work" element={<OurWork/>} />   
-        <Route path="/promo-form" element={<PromoForm/>} />        
+        <Route path="/promo-form" element={<PromoForm/>} />    
+        <Route path="/pricing" element={<Pricing/>} />    
+        <Route path='/royalties-calculator' element={<RoyaltiesCalculator/>}/>
+         <Route path='/invoice-form' element={<InvoiceForm/>}/>
       </Routes>
       <ButtonGradient />
     </div>

@@ -54,6 +54,16 @@ const Header = () => {
     handleClick();
     navigate("/promo-form");
   };
+  const goToRoyaltiesPage = () => {
+    handleClick();
+    navigate("/royalties-calculator");
+  };
+
+  const goToInvoicePage = () => {
+    handleClick();
+    navigate("/invoice-form");
+  };
+
 
   return (
     <div
@@ -126,6 +136,18 @@ const Header = () => {
               className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
             >
               Promo
+            </button>
+            <button
+              onClick={goToRoyaltiesPage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              Royalties Calculator
+            </button>
+            <button
+              onClick={goToInvoicePage}
+              className={`block relative font-code text-2xl uppercase text-n-2 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+            >
+              Invoice Form
             </button>
           </div>
 
